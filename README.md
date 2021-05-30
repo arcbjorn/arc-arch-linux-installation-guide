@@ -11,13 +11,13 @@
 
 ### For full Desktop GUI
 
-11-12 steps
+12 step
 
 Minimal Desktop Environment with native Wayland support installation:
 
-- [sway-borders](https://github.com/fluix-dev/sway-borders) (Window Manager)
-- [ly](https://github.com/nullgemm/ly) (Login Manager)
-- [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) (Mozilla Firefox with dark theme)
+- [sway-borders](https://github.com/fluix-dev/sway-borders) (Window manager)
+- [ly](https://github.com/nullgemm/ly) (Login manager)
+- [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) (Mozilla Firefox browser)
 - [wofi](https://hg.sr.ht/~scoopta/wofi) (App Launcher)
 - [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/) (Theme customization)
 - [python-pywal](https://github.com/dylanaraps/pywal) (Theme color generator)
