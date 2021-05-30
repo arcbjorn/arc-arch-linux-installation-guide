@@ -1,11 +1,35 @@
 # Arch linux installation guide
 
-Minimal archlinux installation with latest (2021) tools:
+### Minimal archlinux installation with latest tools (2021)
 
-- ButterFS filesystem
-- ZRAM
-- Pipewire
-- Wayland
+1-11 steps
+
+- [ButterFS filesystem](https://btrfs.wiki.kernel.org/index.php/Main_Page)
+- [ZRAM](https://en.wikipedia.org/wiki/Zram)
+- [Pipewire](https://pipewire.org/)
+- [Wayland](https://wayland.freedesktop.org/)
+
+### For full Desktop GUI
+
+11-12 steps
+
+Minimal Desktop Environment with native Wayland support installation:
+
+- [sway-borders](https://github.com/fluix-dev/sway-borders) (Window Manager)
+- [ly](https://github.com/nullgemm/ly) (Login Manager)
+- [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) (Mozilla Firefox with dark theme)
+- [wofi](https://hg.sr.ht/~scoopta/wofi) (App Launcher)
+- [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/) (Theme customization)
+- [python-pywal](https://github.com/dylanaraps/pywal) (Theme color generator)
+- [waybar](https://github.com/Alexays/Waybar) (Status bar)
+- [pcmanfm-qt](https://github.com/lxqt/pcmanfm-qt) (File manager)
+- [pass](https://www.passwordstore.org/) (Password manager)
+- [foot](https://codeberg.org/dnkl/foot) (Terminal emulator)
+- [neofetch](https://github.com/dylanaraps/neofetch) (CLI to display system specs)
+- [dunst](https://github.com/dunst-project/dunst) (System notifications manager)
+- [timeshift](https://github.com/teejee2008/timeshift) (System backup & restore tool)
+
+### Installation
 
 1. Boot from USB drive with Arch ISO
 
@@ -109,12 +133,13 @@ ls
 cat /etc/fstab
 ```
 
-8. Run base archlinux system intall
+8. Run base archlinux system intall script
 
 ```bash
 # give exec permissions to script
 git clone https://github.com/arcbjorn/arc-arch-linux-installation-guide
 cd arc-arch-linux-installation-guide
+# don't forget to change username to yours :)
 chmod +x base.sh
 
 # run from root filesystem
@@ -153,9 +178,21 @@ sudo systemctl enable --now zramd.service
 lsblk
 ```
 
-12. Install Desktop tools
+12. Install Desktop GUI & tools
 
 ```bash
-# copy the guide to the filesystem root
+# copy the guide from root filesystem to home repository
 cp -r /arc-arch-linux-installation-guide .
+cd /arc-arch-linux-installation-guide
+
+# give exec permissions to script
+chmod +x sway.sh
+
+# go back to home directory
+cd ..
+./arc-arch-linux-installation-guide/sway.sh
+
+reboot
 ```
+
+### Enjoy your fresh system :)
