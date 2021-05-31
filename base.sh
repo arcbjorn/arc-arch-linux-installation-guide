@@ -92,11 +92,11 @@ systemctl enable firewalld
 systemctl enable acpid
 
 # add user and give priviliges
-useradd -m arc
-echo arc:password | chpasswd
-usermod -aG libvirt arc
+useradd -m example-user
+echo example-user:password | chpasswd
+usermod -aG libvirt example-user
 
-echo "arc ALL=(ALL) ALL" >> /etc/sudoers.d/arc
+echo "example-user ALL=(ALL) ALL" >> /etc/sudoers.d/example-user
 
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
