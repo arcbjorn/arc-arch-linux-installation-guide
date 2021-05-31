@@ -33,7 +33,7 @@ Minimal Desktop Environment with native Wayland support installation:
 
 1. Boot from USB drive with Arch ISO
 
-2. Prepare the disk (partitions)
+2. Prepare the disk (partitions) - using GPT device
 
 ```bash
 # check the disks
