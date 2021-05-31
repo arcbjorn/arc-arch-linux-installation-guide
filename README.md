@@ -1,5 +1,7 @@
 # Arch linux installation guide
 
+This guide is a convenient combination of [Offical Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide) and [Ermanno's amazing guide](https://gitlab.com/eflinux/arch-basic).
+
 ### Minimal archlinux installation with latest tools (2021)
 
 1-11 steps
