@@ -50,7 +50,7 @@ n
 # choose default partition number
 # choose default First Sector memory
 # choose Last Sector memory:
-+300M
++550M
 # enter the EFI partition code:
 ef00
 
