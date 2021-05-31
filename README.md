@@ -113,6 +113,7 @@ mount /dev/***1 /mnt/boot
 5. Install the base system
 
 ```bash
+# for amd processor: amd-ucode instead of intel-ucode
 pacstrap /mnt base linux linux-firmware git wget vim intel-ucode btrfs-progs
 ```
 
