@@ -15,7 +15,7 @@ This guide is a convenient combination of [Offical Arch Linux Installation Guide
 
 12 step
 
-Minimal Desktop Environment with native Wayland support installation:
+Minimal Desktop GUI with native Wayland support installation:
 
 - [sway-borders](https://github.com/fluix-dev/sway-borders) (Window manager)
 - [ly](https://github.com/nullgemm/ly) (Login manager)
