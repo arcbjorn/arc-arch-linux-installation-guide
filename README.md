@@ -96,7 +96,7 @@ btrfs subvolume create @home
 btrfs subvolume create @var
 
 cd
-# mount main partition - root subvolume
+# unmount main partition - root subvolume
 umount /mnt
 
 # mount root subvolume
