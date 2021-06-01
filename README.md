@@ -1,8 +1,10 @@
-# Arch linux installation guide (with ZRAM for SWAP)
+# Arch linux installation guide
 
 This guide is a convenient combination of [Offical Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide) and [Ermanno's amazing guide](https://gitlab.com/eflinux/arch-basic).
 
-### Minimal archlinux installation with latest tools (2021)
+**Important:** This is an installation with the latest & tools available (2021). For more robust installation (Xorg, Swap partition, etc.) please refer to my Arch linux installation (robust) guide.
+
+### Minimal archlinux installation
 
 1-11 steps
 
