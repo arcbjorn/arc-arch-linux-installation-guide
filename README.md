@@ -121,7 +121,7 @@ mount /dev/***1 /mnt/boot
 
 ```bash
 # for amd processor: amd-ucode instead of intel-ucode
-pacstrap /mnt base linux linux-firmware git wget vim intel-ucode btrfs-progs
+pacstrap /mnt base linux linux-firmware git vim intel-ucode btrfs-progs
 ```
 
 6. Generate filesystem table
