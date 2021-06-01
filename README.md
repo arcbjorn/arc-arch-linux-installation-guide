@@ -1,4 +1,4 @@
-# Arch linux installation guide (Wayland + WM)
+# Arch linux installation guide (new tech)
 
 This guide is a convenient combination of [Offical Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide) and [Ermanno's amazing guide](https://gitlab.com/eflinux/arch-basic).
 
