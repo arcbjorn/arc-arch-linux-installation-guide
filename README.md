@@ -1,4 +1,4 @@
-# Arch linux installation guide (new tech)
+# Arch linux installation guide (with ZRAM for SWAP)
 
 This guide is a convenient combination of [Offical Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide) and [Ermanno's amazing guide](https://gitlab.com/eflinux/arch-basic).
 
