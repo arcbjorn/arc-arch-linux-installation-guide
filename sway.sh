@@ -41,9 +41,9 @@ sudo systemctl enable ly.service
 
 mkdir -p .config/{sway,dunst,waybar,wofi}
 
-cp /etc/sway/config ~/.config/sway/
-cp /etc/dunst/dunstrc ~/.config/dunst/
-cp /usr/share/foot/foot.ini ~/.config/foot/
+install -Dm755 /etc/sway/config ~/.config/sway/
+install -Dm755 /etc/dunst/dunstrc ~/.config/dunst/
+install -Dm755 /usr/share/foot/foot.ini ~/.config/foot/
 
 touch ~/.config/waybar/config
 touch ~/.config/wofi/config
