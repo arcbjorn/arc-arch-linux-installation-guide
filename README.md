@@ -2,7 +2,7 @@
 
 This guide is a convenient combination of [Offical Arch Linux Installation Guide](https://wiki.archlinux.org/title/Installation_guide) and [Ermanno's amazing guide](https://gitlab.com/eflinux/arch-basic).
 
-**Important:** This is an installation with the latest & tools available (2021). For more robust installation (Xorg, Swap partition, etc.) please refer to my Arch linux installation (robust) guide.
+**Important:** This is an installation with the latest & greatest tools available (2021). For more robust installation (Xorg, Swap partition, etc.), please refer to my robust [Arch linux installation guide](https://github.com/arcbjorn/arc-robust-arch-linux-installation-guide).
 
 ### Minimal archlinux installation
 
