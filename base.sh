@@ -87,14 +87,19 @@ systemctl enable sshd
 systemctl enable tlp
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
-systemctl enable libvirtd
+
+# enable for virtualization
+# systemctl enable libvirtd
+
 systemctl enable firewalld
 systemctl enable acpid
 
 # add user and give priviliges
 useradd -m example-user
 echo example-user:password | chpasswd
-usermod -aG libvirt example-user
+
+# give user ownership for virtualization
+# usermod -aG libvirt example-user
 
 echo "example-user ALL=(ALL) ALL" >> /etc/sudoers.d/example-user
 
