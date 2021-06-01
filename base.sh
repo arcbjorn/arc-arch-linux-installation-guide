@@ -25,10 +25,10 @@ pacman -S grub grub-btrfs efibootmgr
 pacman -S networkmanager network-manager-applet wpa_supplicant
 
 # install DOS filesystem utilities & disk tools
-pacman -S dialog mtools dosfstools
+pacman -S dialog mtools dosfstools os-prober
 
-# install shell dialog box, arch mirrorlist, service discovery tools
-pacman -S dialog reflector avahi
+# install shell dialog box, arch mirrorlist
+pacman -S dialog reflector
 
 # install linux system group packages
 pacman -S base-devel linux-headers
@@ -36,8 +36,8 @@ pacman -S base-devel linux-headers
 # install user directories & command line tools
 pacman -S xdg-user-dirs xdg-utils
 
-# install additional support network & dns packages
-pacman -S nfs-utils inetutils dnsutils openbsd-netcat iptables-nft ipset nss-mdns
+# install additional support network & dns packages, service discovery tools
+# pacman -S nfs-utils inetutils dnsutils openbsd-netcat iptables-nft ipset nss-mdns avahi
 
 # install bluetooth protocol stack packages
 pacman -S bluez bluez-utils
