@@ -46,6 +46,9 @@ lsblk
 # partition the disk - create GPT Labels
 gdisk /dev/***
 
+# choose new GPT Label command:
+o
+
 # First Partition for EFI
 # choose new command:
 n
