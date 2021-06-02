@@ -43,14 +43,13 @@ sudo systemctl enable ly.service
 
 mkdir -p .config/{sway,dunst,waybar,wofi}
 
-install -Dm755 /etc/sway/config ~/.config/sway/
-install -Dm755 /etc/dunst/dunstrc ~/.config/dunst/
-install -Dm755 /usr/share/foot/foot.ini ~/.config/foot/
+install -Dm755 /etc/sway/config ~/.config/sway/config
+install -Dm755 /etc/dunst/dunstrc ~/.config/dunst/dunstrc
+install -Dm755 /usr/share/foot/foot.ini ~/.config/foot/foot.ini
 
 touch ~/.config/waybar/config
 touch ~/.config/wofi/config
 
-# cp /etc/ly/config.ini ~/.config/ly/
 # config for ly: /etc/ly/config.ini
 
 # set environment variables to use Wayland
