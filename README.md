@@ -8,7 +8,7 @@ This guide is a convenient combination of [Offical Arch Linux Installation Guide
 
 1-11 steps
 
-- [ButterFS filesystem](https://btrfs.wiki.kernel.org/index.php/Main_Page)
+- [BTRFS filesystem](https://btrfs.wiki.kernel.org/index.php/Main_Page)
 - [ZRAM](https://en.wikipedia.org/wiki/Zram)
 - [Pipewire](https://pipewire.org/)
 - [Wayland](https://wayland.freedesktop.org/)
