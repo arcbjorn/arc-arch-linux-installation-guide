@@ -39,6 +39,8 @@ sudo pacman -S wofi lxappearance python-pywal waybar pcmanfm-qt pass foot neofet
 # enable login screen on boot
 sudo systemctl enable ly.service
 
+# Default Configuration
+
 mkdir -p .config/{sway,dunst,waybar,wofi}
 
 install -Dm755 /etc/sway/config ~/.config/sway/
