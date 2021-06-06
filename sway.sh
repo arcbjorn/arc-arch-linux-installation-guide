@@ -48,9 +48,6 @@ sudo pacman -S --noconfirm xorg-xwayland
 # Web Browser
 sudo pacman -S --noconfirm firefox-developer-edition
 
-sudo pacman -S wofi lxappearance python-pywal waybar pcmanfm-qt pass neofetch dunst swayidle xorg-xwayland 
-firefox-developer-edition
-
 # enable login screen on boot
 sudo systemctl enable ly.service
 
