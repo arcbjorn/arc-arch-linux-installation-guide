@@ -32,9 +32,9 @@ Minimal Desktop GUI with native Wayland support installation:
 - [neofetch](https://github.com/dylanaraps/neofetch) (CLI to display system specs)
 - [dunst](https://github.com/dunst-project/dunst) (System notifications manager)
 - [timeshift](https://github.com/teejee2008/timeshift) (System backup & restore tool)
-- [xorg-xwayland](Compatibility layer between Xorg and Wayland)
-- [swayidle](Idle manager)
-- [swaylock-effects-git](Screenlock)
+- [xorg-xwayland](https://wayland.freedesktop.org/xserver.html) (Compatibility layer between Xorg and Wayland)
+- [swayidle](https://github.com/swaywm/swayidle) (Idle manager)
+- [swaylock-effects](https://github.com/mortie/swaylock-effects) (Screenlock)
 
 ### Installation
 
