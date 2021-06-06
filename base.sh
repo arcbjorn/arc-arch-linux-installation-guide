@@ -25,7 +25,7 @@ pacman -S grub grub-btrfs efibootmgr
 pacman -S networkmanager network-manager-applet wpa_supplicant
 
 # install DOS filesystem utilities & disk tools
-pacman -S dialog mtools dosfstools os-prober
+pacman -S mtools dosfstools os-prober
 
 # install shell dialog box, arch mirrorlist
 pacman -S dialog reflector
@@ -46,7 +46,7 @@ pacman -S bluez bluez-utils
 # pacman -S cups hplip
 
 # install sound system packages
-pacman -S alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack sof-firmware pavucontrol
+pacman -S alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack pavucontrol
 
 # install SSH protocol support & sync packages
 pacman -S openssh rsync
