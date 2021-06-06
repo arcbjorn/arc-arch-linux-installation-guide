@@ -18,26 +18,38 @@ echo "MAIN PACKAGES FOR SWAY"
 # Window Manager Sway (sway-borders fork)
 # Screenlock
 # Login Manager
-# Web Browser
 # System backup & restore tool
+# Terminal emulator
 
-paru -S --noconfirm sway-borders-git swaylock-effects-git ly-git firefox-nightly timeshift timeshift-autosnap
+paru -S --noconfirm sway-borders-git swaylock-effects ly timeshift timeshift-autosnap foot
 
 # install DE packages from offical repos:
 
 # App Launcher
+sudo pacman -S --noconfirm wofi
 # Theme customization package
+sudo pacman -S --noconfirm lxappearance
 # Theme color generator
+sudo pacman -S --noconfirm python-pywal
 # Status Bar
+sudo pacman -S --noconfirm waybar
 # File manager
+sudo pacman -S --noconfirm pcmanfm-qt
 # Password manager
-# Terminal emulator
+sudo pacman -S --noconfirm pass
 # CLI to display system specs
+sudo pacman -S --noconfirm neofetch
 # System notifications manager
+sudo pacman -S --noconfirm dunst
 # Idle manager
+sudo pacman -S --noconfirm swayidle
 # Compatibility layer between xorg and wayland
+sudo pacman -S --noconfirm xorg-xwayland
+# Web Browser
+sudo pacman -S --noconfirm firefox-developer-edition
 
-sudo pacman -S wofi lxappearance python-pywal waybar pcmanfm-qt pass foot neofetch dunst swayidle xorg-xwayland
+sudo pacman -S wofi lxappearance python-pywal waybar pcmanfm-qt pass neofetch dunst swayidle xorg-xwayland 
+firefox-developer-edition
 
 # enable login screen on boot
 sudo systemctl enable ly.service
