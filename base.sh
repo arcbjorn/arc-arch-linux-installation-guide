@@ -64,16 +64,6 @@ pacman -S firewalld
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
-# install paru
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si --noconfirm
-cd ..
-
-# install a Nerd Font patched version of JetBrains Mono
-paru -S nerd-fonts-jetbrains-mono
-
 # For Discrete Graphics Cards
 # pacman -S --noconfirm xf86-video-amdgpu
 # pacman -S --noconfirm nvidia nvidia-utils nvidia-settings
@@ -102,6 +92,14 @@ echo example-user:password | chpasswd
 # usermod -aG libvirt example-user
 
 echo "example-user ALL=(ALL) ALL" >> /etc/sudoers.d/example-user
+
+# set environment variables to use Wayland
+echo "QT_QPA_PLATFORM=wayland" >> /etc/environment
+echo "QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
+echo "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
+echo "MOZ_WEBRENDER=1" >> /etc/environment
+echo "XDG_SESSION_TYPE=wayland" >> /etc/environment
+echo "XDG_CURRENT_DESKTOP=sway" >> /etc/environment
 
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
