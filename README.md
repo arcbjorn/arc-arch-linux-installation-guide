@@ -19,7 +19,7 @@ This guide is a convenient combination of [Offical Arch Linux Installation Guide
 
 Minimal Desktop GUI with native Wayland support installation:
 
-- [sway-borders](https://github.com/fluix-dev/sway-borders) (Window manager)
+- [sway](https://github.com/swaywm/sway) (Window manager)
 - [ly](https://github.com/nullgemm/ly) (Login manager)
 - [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) (Mozilla Firefox browser)
 - [wofi](https://hg.sr.ht/~scoopta/wofi) (App Launcher)
@@ -33,6 +33,7 @@ Minimal Desktop GUI with native Wayland support installation:
 - [dunst](https://github.com/dunst-project/dunst) (System notifications manager)
 - [timeshift](https://github.com/teejee2008/timeshift) (System backup & restore tool)
 - [xorg-xwayland](https://wayland.freedesktop.org/xserver.html) (Compatibility layer between Xorg and Wayland)
+- [qt5-wayland](https://wiki.qt.io/QtWayland)
 - [swayidle](https://github.com/swaywm/swayidle) (Idle manager)
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) (Screenlock)
 
