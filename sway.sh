@@ -15,20 +15,21 @@ echo "MAIN PACKAGES FOR SWAY"
 
 # install DE packages from AUR:
 
-# Window Manager Sway (sway-borders fork)
 # Screenlock
 # Login Manager
 # System backup & restore tool
 # Terminal emulator
 
-paru -S --noconfirm sway-borders-git swaylock-effects ly timeshift timeshift-autosnap foot
+paru -S --noconfirm swaylock-effects ly timeshift timeshift-autosnap foot
 
 # install DE packages from offical repos:
 
+# Window Manager Sway
+sudo pacman -S --noconfirm sway
 # App Launcher
 sudo pacman -S --noconfirm wofi
 # Theme customization package
-sudo pacman -S --noconfirm lxappearance
+sudo pacman -S --noconfirm lxappearance qt5ct
 # Theme color generator
 sudo pacman -S --noconfirm python-pywal
 # Status Bar
@@ -45,11 +46,14 @@ sudo pacman -S --noconfirm dunst
 sudo pacman -S --noconfirm swayidle
 # Compatibility layer between xorg and wayland
 sudo pacman -S --noconfirm xorg-xwayland
+# Compatibility layer between Qt and wayland
+sudo pacman -S --noconfirm qt5-wayland
 # Web Browser
 sudo pacman -S --noconfirm firefox-developer-edition
 
 # enable login screen on boot
 sudo systemctl enable ly.service
+sudo systemctl disable getty@tty2.service
 
 # Default Configuration
 
@@ -64,11 +68,14 @@ touch ~/.config/wofi/config
 
 # config for ly: /etc/ly/config.ini
 
-# set environment variables to use Wayland
-echo "QT_QPA_PLATFORM=wayland" >> /etc/environment
-echo "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
-echo "MOZ_WEBRENDER=1" >> /etc/environment
-echo "XDG_SESSION_TYPE=wayland" >> /etc/environment
-echo "XDG_CURRENT_DESKTOP=sway" >> /etc/environment
+# install paru
+pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si --noconfirm
+cd ..
+
+# install a Nerd Font patched version of JetBrains Mono
+paru -S nerd-fonts-jetbrains-mono
 
 printf "\e[1;32mCHANGE NECESSARY FILES BEFORE REBOOT, THEN RUN REBOOT COMMAND\e[0m"
