@@ -23,7 +23,8 @@ Minimal Desktop GUI with native Wayland support installation:
 - [ly](https://github.com/nullgemm/ly) (Login manager)
 - [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/) (Mozilla Firefox browser)
 - [wofi](https://hg.sr.ht/~scoopta/wofi) (App Launcher)
-- [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/) (Theme customization)
+- [lxappearance](https://archlinux.org/packages/community/x86_64/lxappearance/) (Theme customization for GTK+)
+- [qt5ct](https://sourceforge.net/projects/qt5ct/) (for Qt)
 - [python-pywal](https://github.com/dylanaraps/pywal) (Theme color generator)
 - [waybar](https://github.com/Alexays/Waybar) (Status bar)
 - [pcmanfm-qt](https://github.com/lxqt/pcmanfm-qt) (File manager)
@@ -33,7 +34,7 @@ Minimal Desktop GUI with native Wayland support installation:
 - [dunst](https://github.com/dunst-project/dunst) (System notifications manager)
 - [timeshift](https://github.com/teejee2008/timeshift) (System backup & restore tool)
 - [xorg-xwayland](https://wayland.freedesktop.org/xserver.html) (Compatibility layer between Xorg and Wayland)
-- [qt5-wayland](https://wiki.qt.io/QtWayland)
+- [qt5-wayland](https://wiki.qt.io/QtWayland) (ompatibility layer between Qt and Wayland)
 - [swayidle](https://github.com/swaywm/swayidle) (Idle manager)
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) (Screenlock)
 
