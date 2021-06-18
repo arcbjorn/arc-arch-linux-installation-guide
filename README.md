@@ -34,7 +34,7 @@ Minimal Desktop GUI with native Wayland support installation:
 - [dunst](https://github.com/dunst-project/dunst) (System notifications manager)
 - [timeshift](https://github.com/teejee2008/timeshift) (System backup & restore tool)
 - [xorg-xwayland](https://wayland.freedesktop.org/xserver.html) (Compatibility layer between Xorg and Wayland)
-- [qt5-wayland](https://wiki.qt.io/QtWayland) (ompatibility layer between Qt and Wayland)
+- [qt5-wayland](https://wiki.qt.io/QtWayland) (Compatibility layer between Qt and Wayland)
 - [swayidle](https://github.com/swaywm/swayidle) (Idle manager)
 - [swaylock-effects](https://github.com/mortie/swaylock-effects) (Screenlock)
 
