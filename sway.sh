@@ -13,15 +13,6 @@ sudo firewall-cmd --reload
 
 echo "MAIN PACKAGES FOR SWAY"
 
-# install DE packages from AUR:
-
-# Screenlock
-# Login Manager
-# System backup & restore tool
-# Terminal emulator
-
-paru -S --noconfirm swaylock-effects ly timeshift timeshift-autosnap foot
-
 # install DE packages from offical repos:
 
 # Window Manager Sway
@@ -51,6 +42,22 @@ sudo pacman -S --noconfirm qt5-wayland
 # Web Browser
 sudo pacman -S --noconfirm firefox-developer-edition
 
+# install paru
+pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si --noconfirm
+cd ..
+
+# install DE packages from AUR:
+
+# Screenlock
+# Login Manager
+# System backup & restore tool
+# Terminal emulator
+
+paru -S --noconfirm swaylock-effects ly timeshift timeshift-autosnap foot
+
 # enable login screen on boot
 sudo systemctl enable ly.service
 sudo systemctl disable getty@tty2.service
@@ -67,13 +74,6 @@ touch ~/.config/waybar/config
 touch ~/.config/wofi/config
 
 # config for ly: /etc/ly/config.ini
-
-# install paru
-pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si --noconfirm
-cd ..
 
 # install a Nerd Font patched version of JetBrains Mono
 paru -S nerd-fonts-jetbrains-mono
