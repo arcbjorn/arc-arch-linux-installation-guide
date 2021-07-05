@@ -108,7 +108,8 @@ umount /mnt
 mount -o noatime, compress=zstd, space_cache,discard=async,subvol=@ /dev/***2 /mnt
 
 # directories var, home & var
-mkdir /mnt/{boot,home,var}
+mkdir -p /mnt/boot/efi
+mkdir /mnt/{home,var}
 
 # mount home & var subvolumes
 mount -o noatime, compress=zstd, space_cache,discard=async,subvol=@home /dev/***2 /mnt/home
@@ -181,17 +182,7 @@ umount -a
 reboot
 ```
 
-11. Configure ZRAM (used for SWAP)
-
-```bash
-paru -S zramd
-sudo systemctl enable --now zramd.service
-
-# check the block devices table
-lsblk
-```
-
-12. Install Desktop GUI & tools
+11. Install Desktop GUI & tools
 
 ```bash
 # copy the guide from root filesystem to home repository
@@ -204,6 +195,16 @@ chmod +x sway.sh
 # go back to home directory
 cd ..
 ./arc-arch-linux-installation-guide/sway.sh
+```
+
+12. Configure ZRAM (used for SWAP)
+
+```bash
+paru -S zramd
+sudo systemctl enable --now zramd.service
+
+# check the block devices table
+lsblk
 
 reboot
 ```
