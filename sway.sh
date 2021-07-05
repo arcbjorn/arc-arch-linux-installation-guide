@@ -76,6 +76,6 @@ touch ~/.config/wofi/config
 # config for ly: /etc/ly/config.ini
 
 # install a Nerd Font patched version of JetBrains Mono
-paru -S nerd-fonts-jetbrains-mono
+paru -S --noconfirm nerd-fonts-jetbrains-mono
 
 printf "\e[1;32mCHANGE NECESSARY FILES BEFORE REBOOT, THEN RUN REBOOT COMMAND\e[0m"
