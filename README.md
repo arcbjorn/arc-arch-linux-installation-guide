@@ -120,7 +120,7 @@ mount -o noatime, compress=zstd, space_cache,discard=async,subvol=@var /dev/***2
 4. Mount EFI partition
 
 ```bash
-mount /dev/***1 /mnt/boot
+mount /dev/***1 /mnt/boot/efi
 ```
 
 5. Install the base system
